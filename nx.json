@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
+    "production": ["default", "!{projectRoot}/src/test/**/*"],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
   "nxCloudId": "67a2c893edf5660674e0f990",
@@ -20,6 +20,19 @@
           "watchDepsName": "watch-deps"
         }
       }
+    },
+    {
+      "plugin": "@jnxplus/nx-maven",
+      "options": {
+        "localRepoRelativePath": ".m2/repository"
+      }
     }
-  ]
+  ],
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }
