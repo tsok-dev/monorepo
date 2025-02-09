@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.tsok</groupId>
   <artifactId>global-id-java</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>global-id</name>
   <description>This project was generated with nx-maven</description>
 
   <parent>
     <groupId>dev.tsok</groupId>
     <artifactId>source</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <relativePath>../../../../pom.xml</relativePath>
   </parent>
 
