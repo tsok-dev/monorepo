@@ -26,7 +26,6 @@
     "semantic-release": {
       "executor": "@theunderscorer/nx-semantic-release:semantic-release",
       "options": {
-        "repositoryUrl": "https://github.com/tsok-dev/kafka-connect-globalid-smt",
         "plugins": [
           [
             "@semantic-release/github",
