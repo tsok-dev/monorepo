@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/tsok-dev/monorepo/compare/kafka-connect-global-id-smt-v1.0.0...kafka-connect-global-id-smt-v1.1.0) (2025-02-10)
+
+
+### Bug Fixes
+
+* semantic release ([7409f44](https://github.com/tsok-dev/monorepo/commit/7409f444673d636c3cd3de5efacc663197f4b60a))
+
+
+### Features
+
+* **semantic-release:** kafka-connect-global-id-smt ([428a548](https://github.com/tsok-dev/monorepo/commit/428a548cbf18940997da69ff6073a777560263de))
+
 # 1.0.0 (2025-02-10)
 
 
