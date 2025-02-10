@@ -1,0 +1,43 @@
+{
+  "ci": false,
+  "npm": false,
+  "github": true,
+  "changelog": true,
+  "git": true,
+  "githubOptions": {
+    "addReleases": "top",
+    "successComment": false
+  },
+  "tagFormat": "${PROJECT_NAME}-v${version}",
+  "repositoryUrl": "https://github.com/tsok-dev/monorepo",
+  "plugins": [],
+  "branches": [
+    "main",
+    {
+      "name": "next",
+      "prerelease": "rc",
+      "channel": "rc"
+    },
+    {
+      "name": "develop",
+      "prerelease": "beta",
+      "channel": "beta"
+    },
+    {
+      "name": "hotfix/**",
+      "prerelease": "${name.replace(/\\//g, '-')}"
+    },
+    {
+      "name": "bugfix/**",
+      "prerelease": "${name.replace(/\\//g, '-')}"
+    },
+    {
+      "name": "feature/**",
+      "prerelease": "${name.replace(/\\//g, '-')}"
+    },
+    {
+      "name": "chore/**",
+      "prerelease": "${name.replace(/\\//g, '-')}"
+    }
+  ]
+}

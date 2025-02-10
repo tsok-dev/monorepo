@@ -11,6 +11,7 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@theunderscorer/nx-semantic-release": "^2.12.0",
     "nx": "20.4.0",
     "prettier": "^3.2.4",
     "prettier-plugin-java": "2.5.0",
@@ -19,6 +20,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "dependencies": {}
+  ]
 }

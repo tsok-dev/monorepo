@@ -7,7 +7,7 @@
     "build": {
       "executor": "@jnxplus/nx-maven:run-task",
       "outputs": [
-        "{projectRoot}/target",
+        "{workspaceRoot}/dist/{projectRoot}",
         "{options.outputDirLocalRepo}"
       ],
       "options": {
@@ -21,6 +21,31 @@
       },
       "dependsOn": [
         "^build"
+      ]
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "repositoryUrl": "https://github.com/tsok-dev/kafka-connect-globalid-smt",
+        "plugins": [
+          [
+            "@semantic-release/github",
+            {
+              "assets": [
+                [
+                  "dist/${RELATIVE_PROJECT_DIR}/*.jar"
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      "dependsOn": [
+        {
+          "projects": "self",
+          "target": "build",
+          "params": "forward"
+        }
       ]
     }
   },

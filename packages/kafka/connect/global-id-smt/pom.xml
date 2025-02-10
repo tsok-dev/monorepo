@@ -36,6 +36,7 @@
     </dependency>
   </dependencies>
   <build>
+    <directory>../../../../dist/packages/kafka/connect/global-id-smt/</directory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
