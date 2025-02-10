@@ -29,8 +29,7 @@
         "githubOptions": {
           "assets": [
             {
-              "path": "dist/${RELATIVE_PROJECT_DIR}/*.jar",
-              "label": "JAR"
+              "path": "dist/${RELATIVE_PROJECT_DIR}/*.jar"
             }
           ]
         }
